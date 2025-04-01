@@ -1,0 +1,20 @@
+.service-extra {
+  margin-bottom: 12rem;
+  &__title {
+    margin-bottom: 4.6rem;
+    @include mobile {
+      font-size: 3.6rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4rem;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+  }
+}

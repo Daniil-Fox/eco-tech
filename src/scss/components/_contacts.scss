@@ -1,0 +1,114 @@
+.contacts {
+  margin: 9rem 0;
+  margin-bottom: 11.8rem;
+  @include mobile {
+    margin: 6.5rem 0;
+    margin-bottom: 12rem;
+  }
+  &__title {
+    margin-bottom: 4.7rem;
+    @include mobile {
+      font-size: 3.8rem;
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+}
+
+.contacts-item {
+  &__info {
+    background-color: var(--white);
+    padding: 5.5rem 6rem;
+    padding-bottom: 5rem;
+    @include mobile {
+      padding: 4.5rem 4rem;
+      padding-bottom: 4.1rem;
+    }
+  }
+  &__capture {
+    margin-bottom: 2.6rem;
+    line-height: 1.1;
+    font-weight: 600;
+    color: var(--accent-blue);
+  }
+  &__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: var(--black);
+
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 1.4rem;
+      }
+      a {
+        color: inherit;
+        transition: 0.3s ease-in;
+        &:not(:last-child) {
+          margin-right: 1.5rem;
+        }
+
+        @include hover {
+          color: var(--accent-blue);
+        }
+        &:focus {
+          color: var(--accent-blue);
+        }
+        &:active {
+          color: var(--accent-blue);
+        }
+        &:disabled {
+          color: var(--grey3);
+        }
+      }
+    }
+  }
+
+  &__map {
+    height: 34rem;
+    background-color: #ccc;
+    @include mobile {
+      height: 36rem;
+    }
+    .ymaps3--default-marker__background {
+      color: black !important;
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: -3.5rem;
+        transform: translateX(-50%);
+        width: 2.5rem;
+        height: 2.5rem;
+        background-image: url("./../img/building.webp");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .ymaps3--default-marker__stroke,
+    .ymaps3--default-marker__icon {
+      display: none !important;
+    }
+    .ymaps3--hint-title {
+      text-align: center;
+      display: block;
+      font-weight: 600;
+      font-size: 1.2rem;
+      transform: translateX(-20%);
+    }
+  }
+}

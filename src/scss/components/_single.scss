@@ -1,0 +1,143 @@
+.single {
+  margin: 11.7rem 0;
+  margin-bottom: 12rem;
+  @include mobile {
+    margin: 7.3rem 0;
+    margin-bottom: 12rem;
+  }
+  &__wrapper {
+    padding: 8.2rem 7.9rem;
+    padding-bottom: 7.4rem;
+    background-color: var(--white);
+    @include mobile {
+      margin: 0 calc(-1 * var(--container-offset));
+      padding: 5rem var(--container-offset);
+      padding-bottom: 5.5rem;
+    }
+  }
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 4.2rem;
+    }
+  }
+  &__content {
+    grid-column: 1 span;
+    @include mobile {
+      font-size: 2rem;
+    }
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 2.7rem;
+        @include mobile {
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+  &__gallery {
+    grid-column: 1 span;
+    min-width: 0;
+    max-width: 100%;
+    padding-top: 0.6rem;
+
+    @include mobile {
+      padding: 0;
+    }
+  }
+  &__link {
+    display: inline-block;
+    margin-bottom: 2.6rem;
+    font-size: 1.6rem;
+  }
+  &__title {
+    margin-bottom: 2rem;
+    letter-spacing: 0.06em;
+    @include mobile {
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__header {
+    margin-bottom: 5.2rem;
+    @include mobile {
+      margin-bottom: 3.3rem;
+    }
+  }
+  &__time {
+    font-weight: 600;
+    font-size: 2.6rem;
+    line-height: 120%;
+    color: var(--accent-blue);
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+
+  &__slider {
+    &--main {
+      height: 54rem;
+      margin-bottom: 1rem;
+      @include mobile {
+        height: 55rem;
+      }
+    }
+
+    &--thumb {
+      height: 8rem;
+      .swiper-wrapper {
+        justify-content: center;
+      }
+      .single__img {
+        cursor: pointer;
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+
+  &__img {
+    height: auto;
+    cursor: zoom-in;
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    &.swiper-slide-thumb-active {
+      outline: 2px solid var(--accent-blue);
+      outline-offset: -2px;
+    }
+  }
+
+  &__arr {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    height: 100%;
+    width: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    svg {
+      width: 1.5rem;
+      height: auto;
+      stroke: var(--black);
+      transition: 0.2s ease-in;
+    }
+    &--prev {
+      left: 0;
+    }
+    &--next {
+      right: 0;
+      transform: rotateY(180deg);
+    }
+  }
+}

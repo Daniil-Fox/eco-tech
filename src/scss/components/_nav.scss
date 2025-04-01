@@ -1,0 +1,31 @@
+.nav {
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      a {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 120%;
+        color: var(--white);
+        transition: 0.3s ease-in;
+        @include hover {
+          color: var(--accent-blue);
+        }
+        &:focus {
+          color: var(--accent-blue);
+        }
+        &:active {
+          color: var(--accent-blue);
+        }
+        &:disabled {
+          color: var(--grey3);
+        }
+      }
+    }
+  }
+}

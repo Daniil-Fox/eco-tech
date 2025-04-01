@@ -1,0 +1,46 @@
+.about-cta {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    gap: 4rem;
+  }
+  &__item {
+    grid-column: 7 span;
+    background-color: #fff;
+    padding: 7.7rem 6rem;
+    padding-bottom: 7.1rem;
+
+    &--form {
+      padding-top: 5.3rem;
+      padding-bottom: 5.6rem;
+    }
+  }
+  &__img {
+    grid-row: 2 span;
+    grid-column: 9 span;
+    position: relative;
+    clip-path: polygon(0 0, 90.5% 0, 100% 10%, 100% 90%, 91.5% 100%, 0 100%);
+
+    img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 2.1rem;
+    line-height: 1.1;
+  }
+  &__capture {
+    font-weight: 600;
+    max-width: 80%;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+  &__desc {
+    font-weight: 400;
+  }
+}

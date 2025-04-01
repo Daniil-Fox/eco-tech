@@ -1,0 +1,28 @@
+.schedule-hero {
+  padding: 11rem 0;
+
+  &__header {
+    align-items: flex-start;
+    margin-bottom: 6.2rem;
+  }
+  &__title {
+    letter-spacing: 0.05em;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    padding-top: 0.7rem;
+  }
+
+  &__btn {
+    padding: 1rem 2.9rem;
+    padding-bottom: 0.7rem;
+
+    &:nth-child(1) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+}

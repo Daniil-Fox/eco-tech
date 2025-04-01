@@ -1,0 +1,25 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+@import "./components/ui";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/nav";
+@import "./components/our-service";
+@import "./components/tt-section";
+@import "./components/cta";
+@import "./components/form";
+@import "./components/footer";
+@import "./components/footer-nav";
+@import "./components/about-start";
+@import "./components/about-nav";
+@import "./components/about-cta";
+@import "./components/news";
+@import "./components/schedule";
+@import "./components/schedule-current";
+@import "./components/single";
+@import "./components/service-extra";
+@import "./components/modal";
+@import "./components/contacts";

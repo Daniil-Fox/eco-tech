@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="theme-color" content="#111111" />
+  <title>Экотех</title>
+  <link
+    rel="preload"
+    href="fonts/Inter-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Light.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Montserrat-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Roboto-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Unbounded-Regular.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Unbounded-Medium.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link
+    rel="preload"
+    href="fonts/Unbounded-SemiBold.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+  />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+
+  <body class="page__body">
+    <div class="site-container">
+      <header class="header header--sec">
+  <div class="container">
+    <div class="header__container">
+      <a href="./" class="header__logo">
+        <svg
+          width="40"
+          height="46"
+          viewBox="0 0 40 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M39.3441 11.7456L19.7287 0.333008L0.113319 11.7456V34.5708L19.7287 45.9834L39.3441 34.5708V11.7456ZM39.3441 34.5708H0.113319L19.7287 0.333008L39.3441 34.5708Z"
+          />
+        </svg>
+        <span>
+          <span>экотех</span>
+          <span>транслогистик</span>
+        </span>
+      </a>
+
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li>
+            <a href="#">Главная</a>
+          </li>
+          <li>
+            <a href="#">Новости</a>
+          </li>
+          <li>
+            <a href="#">О&nbsp;нас</a>
+          </li>
+          <li>
+            <a href="#">Расписание судов</a>
+          </li>
+          <li>
+            <a href="#">Услуги</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn btn-reset btn--stroke btn--small header__btn">
+        Оставить заявку
+      </button>
+
+      <button
+        class="btn-reset burger"
+        aria-label="Открыть меню"
+        aria-expanded="false"
+        data-burger
+      >
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <section class="our-service our-service--main">
+  <div class="container">
+    <div class="our-service__header flex jcsb alc">
+      <h2 class="title3 our-service__title">Основные услуги</h2>
+    </div>
+    <div class="our-service__items">
+      <a href="#" class="our-service__item">
+        <div class="our-service__img">
+          <img src="./img/our-service/01.webp" alt="" />
+        </div>
+        <div class="our-service__capture">
+          <p>Доставка грузов на&nbsp;Чукотку</p>
+        </div>
+      </a>
+      <a href="#" class="our-service__item">
+        <div class="our-service__img">
+          <img src="./img/our-service/02.webp" alt="" />
+        </div>
+        <div class="our-service__capture">
+          <p>ЖД&nbsp;перевозки <span>Реф/Сухие контейнеры</span></p>
+        </div>
+      </a>
+      <a href="#" class="our-service__item">
+        <div class="our-service__img">
+          <img src="./img/our-service/03.webp" alt="" />
+        </div>
+        <div class="our-service__capture">
+          <p>Автомобильные перевозки</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="service-extra">
+  <div class="container">
+    <h2 class="title2 service-extra__title">дополнительные услуги</h2>
+    <div class="service-extra__items">
+      <a
+        href="#"
+        class="our-service__item our-service__item--extra"
+        data-service="resp"
+      >
+        <div class="our-service__img">
+          <img src="./img/our-service/extra/01.webp" alt="" />
+        </div>
+        <div class="our-service__capture">
+          <p>Ответственное хранение грузов</p>
+        </div>
+      </a>
+      <a
+        href="#"
+        class="our-service__item our-service__item--extra"
+        data-service="comp"
+      >
+        <div class="our-service__img">
+          <img src="./img/our-service/extra/02.webp" alt="" />
+        </div>
+        <div class="our-service__capture">
+          <p>Комплектация и&nbsp;перегруз контейнеров</p>
+        </div>
+      </a>
+      <a
+        href="#"
+        class="our-service__item our-service__item--extra"
+        data-service="service"
+      >
+        <div class="our-service__img">
+          <img src="./img/our-service/extra/03.webp" alt="" />
+        </div>
+        <div class="our-service__capture">
+          <p>Услуги приобретения грузов и&nbsp;автотранспорта</p>
+        </div>
+      </a>
+      <a
+        href="#"
+        class="our-service__item our-service__item--extra"
+        data-service="safe"
+      >
+        <div class="our-service__img">
+          <img src="./img/our-service/extra/04.webp" alt="" />
+        </div>
+        <div class="our-service__capture">
+          <p>Услуги<br />страхования перевозок</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+ <section class="cta">
+  <div class="container">
+    <div class="cta__container">
+      <div class="cta__content">
+        <div class="cta__left">
+          <h2 class="cta__title title2">
+            Оставьте заявку и&nbsp;отдел логистики с&nbsp;вами свяжемся
+          </h2>
+
+          <form class="form form cta__form">
+            <div class="form__row">
+              <div class="form__field">
+                <input
+                  type="text"
+                  id="input-name"
+                  name="Имя"
+                  class="form__input input-name"
+                />
+                <label for="input-name">Имя</label>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__field">
+                <input
+                  type="tel"
+                  id="input-tel"
+                  name="Телефон"
+                  class="form__input input-tel"
+                />
+                <label for="input-tel">Телефон</label>
+              </div>
+            </div>
+
+            <button class="btn-reset btn form__btn" disabled>отправить</button>
+            <small class="link">
+              Нажимая кнопку &laquo;Отправить заявку&raquo;,
+              вы&nbsp;соглашаетесь <br />с&nbsp;<a href="#">
+                политикой обработки персональных данных
+              </a>
+            </small>
+          </form>
+        </div>
+        <div class="cta__img">
+          <picture>
+            <source
+              srcset="./img/cta-mob.webp"
+              type="image/webp"
+              media="(max-width: 768px)"
+            />
+            <source srcset="./img/cta.webp" type="image/webp" />
+            <img src="./img/cta.webp" alt="" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="modal" data-modal="resp">
+  <div class="modal__body container hor">
+    <div class="modal__img">
+      <picture>
+        <source
+          srcset="./img/our-service/extra/01-mob.webp"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <source srcset="./img/our-service/extra/01.webp" type="image/webp" />
+        <img src="./img/our-service/extra/01.webp" alt="" />
+      </picture>
+    </div>
+    <div class="modal__content">
+      <div class="modal__header flex alc jcsb">
+        <p class="modal__title capture1">Ответственное хранение грузов</p>
+        <button class="modal__close btn-reset">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 2L22 22M22 2L2 22" stroke="black" stroke-width="4" />
+          </svg>
+        </button>
+      </div>
+      <div class="desc2 modal__desc">
+        <p>
+          Компания ЭКОТЕХ сдаёт в&nbsp;аренду, продаёт, приобретает сухие
+          и&nbsp;рефрижераторные порожние контейнеры&nbsp;&mdash; стандартные
+          (20&rsquo;DC, 40&rsquo;DC) и&nbsp;высокие (20&rsquo;HC, 40&rsquo;HC)
+          во&nbsp;Владивостоке и&nbsp;Москве.<br />
+          Под заказ:<br />
+          поставляем контейнеры б/у (размер и&nbsp;техническое состояние
+          по&nbsp;согласованию);<br />
+          осуществляем ремонт любых повреждений сухих и&nbsp;рефконтейнеров
+          качественно и&nbsp;срок.
+        </p>
+        <p>
+          При невозможности возврата Арендатором порожнего контейнера
+          Арендодателю, мы&nbsp;готовы предоставить Арендатору возможность
+          выкупа контейнера в&nbsp;собственность, на&nbsp;согласованных
+          условиях.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="modal" data-modal="comp">
+  <div class="modal__body container vert">
+    <div class="modal__img">
+      <picture>
+        <source
+          srcset="./img/our-service/extra/02-mob.webp"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <source srcset="./img/our-service/extra/05.webp" type="image/webp" />
+        <img src="./img/our-service/extra/05.webp" alt="" />
+      </picture>
+    </div>
+    <div class="modal__content">
+      <div class="modal__header flex alc jcsb">
+        <p class="modal__title capture1">
+          Комплектация и&nbsp;перегруз контейнеров
+        </p>
+        <button class="modal__close btn-reset">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 2L22 22M22 2L2 22" stroke="black" stroke-width="4" />
+          </svg>
+        </button>
+      </div>
+      <div class="desc2 modal__desc">
+        <p>
+          Компания ЭКОТЕХ предлагает услугу по&nbsp;перегрузке грузов
+          и&nbsp;формированию контейнеров на&nbsp;площадке компании
+          с&nbsp;последующим оформлением документов для отправки груза
+          на&nbsp;Чукотку или в&nbsp;Центральные регионы страны.
+        </p>
+        <p>
+          Мы&nbsp;предлагаем удобные формы сотрудничества:<br />
+          возможность комплектации контейнера к&nbsp;дальнейшей отправке
+          непосредственно на&nbsp;территории площадки;<br />
+          оформление документов на&nbsp;груз;<br />
+          безопасное хранение контейнеров;<br />
+          бесплатное (первые 2&nbsp;дня) временное хранение груза;<br />
+          страховку груза от&nbsp;всех рисков на&nbsp;всем пути следования.<br />
+        </p>
+        <p>
+          Данный этап транспортной логистики является неотъемлемой частью
+          большинства грузоперевозок и&nbsp;осуществляется в&nbsp;следующих
+          случаях:<br />
+          при подготовке грузов к&nbsp;транспортировке контейнерами
+          по&nbsp;морю, в&nbsp;районы Чукотского Автономного округа;<br />
+          для перевозки грузов далее из&nbsp;Владивостока железнодорожным или
+          автомобильным транспортом конечному получателю;<br />
+          при необходимости перемещения груза с&nbsp;железнодорожной платформы,
+          вагона на&nbsp;автотранспорт и&nbsp;его доставить следующий пункт
+          назначения;<br />
+          когда несколько поставщиков из&nbsp;разных точек, везут продукцию
+          в&nbsp;один пункт сбора, и&nbsp;требуется её&nbsp;консолидация
+          в&nbsp;контейнере/складе и&nbsp;т.д.<br />
+        </p>
+        <p>
+          Заказчику предоставляется возможность в&nbsp;том числе
+          и&nbsp;самостоятельно перегрузить свой товар/партию товара для
+          формирования контейнера с&nbsp;последующей отгрузкой.<br />
+          Операция может производиться только в&nbsp;специализированных,
+          предназначенных для этого местах, осуществление перегрузки
+          на&nbsp;улице не&nbsp;разрешается. Разгрузочно-погрузочные работы
+          на&nbsp;контейнерной площадке производятся в&nbsp;договорном
+          порядке.<br />
+          Приём транспорта осуществляется по&nbsp;предварительно отправленной
+          заявке с&nbsp;указанием характеристик изделий и&nbsp;перечня
+          необходимых работ. Обязательное условие перегрузки&nbsp;&mdash;
+          предоставление сопроводительных документов.<br />
+          Дополнительную обработку продукции (сверка, взвешивание, маркировка,
+          переупаковка, и&nbsp;т.д.)&nbsp;&mdash; компания не&nbsp;производит.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="modal" data-modal="service">
+  <div class="modal__body container">
+    <div class="modal__img">
+      <picture>
+        <source
+          srcset="./img/our-service/extra/03-mob.webp"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <source srcset="./img/our-service/extra/03.webp" type="image/webp" />
+        <img src="./img/our-service/extra/03.webp" alt="" />
+      </picture>
+    </div>
+    <div class="modal__content">
+      <div class="modal__header flex alc jcsb">
+        <p class="modal__title capture1">
+          Услуги приобретения грузов и&nbsp;автотранспорта
+        </p>
+        <button class="modal__close btn-reset">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 2L22 22M22 2L2 22" stroke="black" stroke-width="4" />
+          </svg>
+        </button>
+      </div>
+      <div class="desc2 modal__desc">
+        <p>
+          Компания ЭКОТЕХ&mdash; предлагает своим Заказчикам услуги приёма
+          и&nbsp;хранения транзитного груза для последующей транспортировки
+          на&nbsp;Чукотку на&nbsp;контейнерной площадке, равноудаленно
+          расположенной от&nbsp;АО&nbsp;&laquo;Дальзавод-Терминал&raquo;
+          и&nbsp;&laquo;Морской Комплекс &laquo;Назимово&raquo;
+        </p>
+        <p>
+          На&nbsp;хранение принимаются сухие контейнеры (с&nbsp;грузом
+          и&nbsp;порожние), рефрижераторные контейнеры, автоспецтехника
+          и&nbsp;генеральный груз.
+        </p>
+        <p>Стоимость услуг необходимо уточнять дополнительно.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="modal" data-modal="safe">
+  <div class="modal__body container">
+    <div class="modal__img">
+      <picture>
+        <source
+          srcset="./img/our-service/extra/04-mob.webp"
+          type="image/webp"
+          media="(max-width: 768px)"
+        />
+        <source srcset="./img/our-service/extra/04.webp" type="image/webp" />
+        <img src="./img/our-service/extra/04.webp" alt="" />
+      </picture>
+    </div>
+    <div class="modal__content">
+      <div class="modal__header flex alc jcsb">
+        <p class="modal__title capture1">Услуги страхования перевозок</p>
+        <button class="modal__close btn-reset">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M2 2L22 22M22 2L2 22" stroke="black" stroke-width="4" />
+          </svg>
+        </button>
+      </div>
+      <div class="desc2 modal__desc">
+        <p>
+          Компания ЭКОТЕХ предлагает Заказчикам услугу страхования груза при
+          перевозке.<br />
+          Услуга Страхования грузов подразумевает выплату страховой компанией
+          компенсации Клиенту, при полном повреждении или частичной потере
+          груза, фактах воровства либо намеренного повреждения или прочих
+          неблагоприятных обстоятельствах.
+        </p>
+        <p>
+          По&nbsp;желанию Заказчика в&nbsp;договор могут быть внесены
+          дополнительные индивидуальные условия, а&nbsp;величина страховой
+          премии определяется характером и&nbsp;номенклатурой груза, способом
+          его доставки, объёмом перевозимой партии, маршрутом, типом
+          транспортного средства, и&nbsp;т.д. (все конкретные условия
+          страхования оговариваются Договором индивидуально).
+        </p>
+        <p>
+          Минимизация рисков путём заключения договора страхования все более
+          и&nbsp;более востребована обеими сторонами сделки, как отправляющей,
+          так и&nbsp;стороной, принимающей груз к&nbsp;перевозке.<br />
+          Ответственность Грузоперевозчика за&nbsp;доверенный груз в&nbsp;рамках
+          договора на&nbsp;транспортно-экспедиционное обслуживание
+          не&nbsp;является тождественной страховому полису и&nbsp;учитывает
+          далеко не&nbsp;весь спектр зон ответственности за&nbsp;груз. Именно
+          поэтому, понимая риски наших клиентов, мы&nbsp;предлагаем услугу
+          страхования грузов на&nbsp;выгодных условиях и&nbsp;стоимости.
+        </p>
+        <p>
+          При сотрудничестве с&nbsp;нашей компанией рефрижераторные контейнеры
+          страхуются по&nbsp;умолчанию.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__top flex jcsb">
+      <div class="footer__left">
+        <div class="capture footer__capture">Навигация по&nbsp;сайту</div>
+        <nav class="footer-nav">
+          <ul class="list-reset">
+            <li>
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">О&nbsp;нас</a>
+            </li>
+            <li>
+              <a href="#">Расписание</a>
+            </li>
+            <li>
+              <a href="#">Услуги</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <ul class="list-reset">
+            <li>
+              <a href="#">Доставка грузов на&nbsp;Чукотку</a>
+            </li>
+            <li>
+              <a href="#">ЖД&nbsp;перевозки</a>
+            </li>
+            <li>
+              <a href="#">Автомобильные перевозки</a>
+            </li>
+            <li>
+              <a href="#">Аренда, продажа, покупка контейнеров</a>
+            </li>
+            <li>
+              <a href="#">Услуги хранения контейнеров</a>
+            </li>
+            <li>
+              <a href="#">Перегруз и&nbsp;комплектация контейнеров</a>
+            </li>
+            <li>
+              <a href="#">Услуги страхования перевозок</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__right">
+        <a href="./" class="footer__logo">
+          <img src="./img/logo-sec.svg" alt="" />
+        </a>
+        <a href="tel:88006007358" class="footer__tel">8 800 600-73-58</a>
+        <a href="mailto:info@ecotech-translogistic.ru" class="footer__email">
+          info@ecotech-translogistic.ru
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom flex jcsb alc">
+      <div class="footer__row flex alc">
+        <a href="#">Политика обработки персональных данных</a>
+        <a href="#">Документация</a>
+      </div>
+      <div class="footer__row flex alc">
+        <small>Не&nbsp;является публичной офертой</small>
+        <small>ООО&nbsp;«Экотех Транслогистик», 2025 ©</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </body>
+</html>

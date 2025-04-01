@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <script src="https://api-maps.yandex.ru/v3/?apikey=8c9bb3f5-07ef-4aa2-8a70-b84bc9e8879b&lang=ru_RU"></script>
+    <div class="site-container">
+      @include('partials/header-sec.html')
+      <main class="main">
+        <section class="contacts">
+          <div class="container">
+            <h1 class="title2 contacts__title">контакты</h1>
+            <div class="contacts__container">
+              <div class="contacts__item contacts-item">
+                <div class="contacts-item__info">
+                  <p class="capture1 contacts-item__capture">
+                    Офис Владивосток
+                  </p>
+                  <address class="contacts-item__address">
+                    <p>
+                      Адрес: 690062, Приморский край, г.&nbsp;Владивосток,
+                      ул.&nbsp;Днепровская,&nbsp;д.&nbsp;25,&nbsp;оф.&nbsp;&#8470;&nbsp;9
+                    </p>
+                    <p>
+                      <a href="tel:+7 924 424 58 58">+7 924 424 58 58</a>
+                      <a href="tel:8 800 600 73 58">8 800 600 73 58</a>
+                    </p>
+                    <p>
+                      <a href="mailto:info@ecotech-translogistic.ru">
+                        info@ecotech-translogistic.ru
+                      </a>
+                    </p>
+                  </address>
+                </div>
+                <div class="contacts-item__map" id="map1"></div>
+              </div>
+              <div class="contacts__item contacts-item">
+                <div class="contacts-item__info">
+                  <p class="capture1 contacts-item__capture">Офис Москва</p>
+                  <address class="contacts-item__address">
+                    <p>
+                      Адрес: 109542, г.&nbsp;Москва, Рязанский проспект,
+                      д.&nbsp;86/1, стр.&nbsp;3, помещение&nbsp;IV, ком.&nbsp;10
+                    </p>
+                    <p>
+                      <a href="tel:+7 925 292 44 40">+7 925 292 44 40</a>
+                      <a href="tel:8 800 600 73 58">8 800 600 73 58</a>
+                    </p>
+                    <p>
+                      <a href="mailto:info@ecotech-translogistic.ru">
+                        info@ecotech-translogistic.ru
+                      </a>
+                    </p>
+                  </address>
+                </div>
+                <div class="contacts-item__map" id="map2"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        @include('partials/cta.html')
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>

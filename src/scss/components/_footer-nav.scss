@@ -1,0 +1,46 @@
+.footer-nav {
+  display: flex;
+  gap: 10.5rem;
+  ul:last-child {
+    @include mobile {
+      display: none;
+    }
+  }
+  ul {
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  li {
+    &:not(:last-child) {
+      margin-bottom: 1.6rem;
+      @include mobile {
+        margin-bottom: 2rem;
+      }
+    }
+    a {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 1.8rem;
+      line-height: 120%;
+      text-align: center;
+      color: var(--black);
+      transition: 0.3s ease-in;
+      @include mobile {
+        font-size: 2rem;
+      }
+      @include hover {
+        color: var(--accent-blue);
+      }
+      &:focus {
+        color: var(--accent-blue);
+      }
+      &:active {
+        color: var(--accent-blue);
+      }
+      &:disabled {
+        color: var(--grey3);
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+  @include('partials/head.html')
+
+  <body class="page__body">
+    <div class="site-container">
+      @include('partials/header-sec.html')
+      <main class="main">
+        <section class="single">
+          <div class="container">
+            <div class="single__wrapper">
+              <div class="single__header">
+                <a href="#" class="link single__link">
+                  <svg
+                    width="8"
+                    height="14"
+                    viewBox="0 0 8 14"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7 12.9999L0.999862 7.00006L6.99972 0.999923" />
+                  </svg>
+                  вернуться
+                </a>
+                <h1 class="title2 single__title">
+                  &laquo;Сухогруз &bdquo;ЛИЗА&ldquo;&nbsp;- доставил грузы
+                  и&nbsp;технику в&nbsp;порт Провидения&raquo;
+                </h1>
+                <time datetime="21.09.2024" class="single__time"
+                  >21.09.2024</time
+                >
+              </div>
+
+              <div class="single__container">
+                <div class="single__content desc2">
+                  <p>
+                    Сухогруз &laquo;ЛИЗА&raquo; (оператор компания
+                    &laquo;ЭКОТЕХ&raquo;&laquo;) готов к&nbsp;рейсу<br />
+                    по&nbsp;маршруту: Владивосток&nbsp;&mdash;
+                    Анадырь&nbsp;&mdash; Провидения. На&nbsp;данном рейсе
+                    компания &laquo;ЭКОТЕХ&raquo; обеспечивает доставку
+                    продуктов, большого количества тяжёлой спецтехники
+                    для&nbsp;г. Анадыря и&nbsp;пос. Провидения, а&nbsp;также
+                    техники и&nbsp;стройматериалов<br />для сел Провиденского
+                    района.
+                  </p>
+                  <p>
+                    Для ускорения выхода т/х в&nbsp;рейс&nbsp;&mdash; работы
+                    производятся круглосуточно
+                  </p>
+                </div>
+                <div class="single__gallery">
+                  <div class="swiper single__slider single__slider--main">
+                    <div class="swiper-wrapper">
+                      <div
+                        class="swiper-slide single__img"
+                        data-fancybox="gallery"
+                        data-src="./img/single/01.webp"
+                      >
+                        <img src="./img/single/01.webp" alt="" />
+                      </div>
+                      <div
+                        class="swiper-slide single__img"
+                        data-fancybox="gallery"
+                        data-src="./img/single/02.webp"
+                      >
+                        <img src="./img/single/02.webp" alt="" />
+                      </div>
+                      <div
+                        class="swiper-slide single__img"
+                        data-fancybox="gallery"
+                        data-src="./img/single/03.webp"
+                      >
+                        <img src="./img/single/03.webp" alt="" />
+                      </div>
+                      <div
+                        class="swiper-slide single__img"
+                        data-fancybox="gallery"
+                        data-src="./img/single/04.webp"
+                      >
+                        <img
+                          src="./img/single/04.webp"
+                          alt="./img/single/04.webp"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper single__slider single__slider--thumb">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide single__img">
+                        <img src="./img/single/01.webp" alt="" />
+                      </div>
+                      <div class="swiper-slide single__img">
+                        <img src="./img/single/02.webp" alt="" />
+                      </div>
+                      <div class="swiper-slide single__img">
+                        <img src="./img/single/03.webp" alt="" />
+                      </div>
+                      <div class="swiper-slide single__img">
+                        <img src="./img/single/04.webp" alt="" />
+                      </div>
+                    </div>
+
+                    <div class="single__control">
+                      <button class="btn-reset single__arr single__arr--prev">
+                        <svg
+                          width="11"
+                          height="17"
+                          viewBox="0 0 11 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.5 15.9999L1.99983 8.50012L9.49966 0.999949"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </button>
+                      <button class="btn-reset single__arr single__arr--next">
+                        <svg
+                          width="11"
+                          height="17"
+                          viewBox="0 0 11 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.5 15.9999L1.99983 8.50012L9.49966 0.999949"
+                            stroke-width="2"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        @include('partials/cta.html')
+      </main>
+      @include('partials/footer.html')
+    </div>
+  </body>
+</html>
