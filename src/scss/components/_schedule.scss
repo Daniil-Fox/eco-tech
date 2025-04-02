@@ -1,12 +1,36 @@
 .schedule-hero {
   padding: 11rem 0;
-
+  @include mobile {
+    padding: 6.3rem 0;
+    margin-bottom: 5rem;
+  }
   &__header {
     align-items: flex-start;
     margin-bottom: 6.2rem;
+    @include mobile {
+      margin-bottom: 2.4rem;
+    }
+  }
+  &__z {
+    display: none;
+    @include mobile {
+      display: flex;
+      padding-top: 2.2rem;
+      padding-bottom: 1.6rem;
+      width: 100%;
+    }
   }
   &__title {
     letter-spacing: 0.05em;
+    span {
+      display: none;
+      @include mobile {
+        display: inline;
+      }
+    }
+    @include mobile {
+      font-size: 3.8rem;
+    }
   }
 
   &__buttons {
@@ -14,6 +38,9 @@
     align-items: stretch;
     gap: 2rem;
     padding-top: 0.7rem;
+    @include mobile {
+      display: none;
+    }
   }
 
   &__btn {

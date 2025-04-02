@@ -31,6 +31,23 @@ html {
 
   display: flex;
   flex-direction: column;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(#fff, 0.3);
+    backdrop-filter: blur(5rem);
+    opacity: 0;
+    z-index: -10;
+    transition: 0.2s ease-in;
+  }
+  &.menu-active {
+    &::after {
+      z-index: 10;
+      opacity: 1;
+    }
+  }
 }
 
 img {

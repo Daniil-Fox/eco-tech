@@ -1,9 +1,15 @@
 .tt {
   margin-bottom: 12rem;
-
+  @include mobile {
+    display: none;
+  }
   &__header {
     margin-bottom: 6.5rem;
     align-items: flex-start;
+
+    @include mobile {
+      margin-bottom: 2rem;
+    }
   }
   &__title {
     letter-spacing: 0.058em;
@@ -16,6 +22,9 @@
   }
   &__table {
     margin-bottom: 2.7rem;
+    @include mobile {
+      display: none;
+    }
     table {
       width: 100%;
       border-collapse: separate;
@@ -85,6 +94,93 @@
     }
   }
 
+  &__slider {
+    display: none;
+    padding: 0 var(--container-offset);
+    @include mobile {
+      display: block;
+      margin-bottom: 3.4rem;
+    }
+
+    &--main {
+      @include mobile {
+        margin-bottom: 0rem;
+      }
+      .tt__mtable {
+        table {
+          td {
+            padding-top: 2.5rem;
+            padding-bottom: 2.4rem;
+          }
+        }
+      }
+    }
+  }
+  &__mtable {
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0.3rem;
+      margin-bottom: 10px;
+
+      th,
+      td {
+        padding: 1.2rem 1rem;
+        background-color: #fff;
+        text-align: center;
+      }
+      td {
+        padding: 1.9rem 2.8rem;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 140%;
+        color: var(--black);
+        &:nth-child(1) {
+          text-align: left;
+          width: 50.2%;
+        }
+      }
+      th {
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 140%;
+        letter-spacing: 0.004em;
+        color: var(--black);
+        &[rowspan] {
+          text-align: left;
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 140%;
+          color: var(--black);
+          padding: 3.8rem 2.7rem;
+          span {
+            display: block;
+            margin-top: 0.4rem;
+            font-weight: 500;
+            font-size: 2.4rem;
+            color: var(--accent-blue);
+          }
+        }
+        &[colspan] {
+          padding: 1.2rem 2.7rem;
+          & > span {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 400;
+            font-size: 1.4rem;
+            line-height: 100%;
+            color: var(--black);
+            span:last-child {
+              font-weight: 500;
+              font-size: 2rem;
+              line-height: 140%;
+            }
+          }
+        }
+      }
+    }
+  }
   &__description {
     font-weight: 400;
     font-size: 2rem;
@@ -95,5 +191,32 @@
     align-items: center;
     // letter-spacing: -0.005em;
     gap: 2.6rem;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0;
+      margin-bottom: 4.5rem;
+      line-height: 150%;
+    }
+
+    &--small {
+      @include mobile {
+        font-size: 1.6rem;
+        margin-bottom: 3.8rem;
+      }
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding-bottom: 1.3rem;
+  }
+}
+
+.tt--mob {
+  display: none;
+  @include mobile {
+    display: block;
   }
 }

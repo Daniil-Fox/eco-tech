@@ -22,3 +22,8 @@ const singleSlider = new Swiper(".single__slider--main", {
     nextEl: ".single__arr--next",
   },
 });
+
+new Swiper(".tt__slider", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+});

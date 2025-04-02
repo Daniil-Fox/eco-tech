@@ -1,0 +1,34 @@
+.menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--white);
+  transform: translateY(-100vh);
+  opacity: 0;
+  transition: 0.2s ease-in;
+
+  &.menu--active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  &__body {
+    padding: 5rem 0;
+  }
+  &__nav {
+    margin-bottom: 5rem;
+    ul {
+      flex-direction: column;
+      li {
+        a {
+          color: var(--black);
+        }
+      }
+    }
+  }
+  &__btn {
+    padding: 1.4rem;
+    width: 100%;
+  }
+}
