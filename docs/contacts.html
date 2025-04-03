@@ -72,12 +72,12 @@
   />
   <link rel="stylesheet" href="css/vendor.css" />
   <link rel="stylesheet" href="css/main.css" />
+  <script src="https://api-maps.yandex.ru/v3/?apikey=8c9bb3f5-07ef-4aa2-8a70-b84bc9e8879b&lang=ru_RU"></script>
   <script defer src="js/main.js"></script>
 </head>
 
 
   <body class="page__body">
-    <script src="https://api-maps.yandex.ru/v3/?apikey=8c9bb3f5-07ef-4aa2-8a70-b84bc9e8879b&lang=ru_RU"></script>
     <div class="site-container">
       <header class="header header--sec">
   <div class="container">
@@ -125,7 +125,9 @@
         </ul>
       </nav>
 
-      <button class="btn btn-reset btn--stroke btn--small header__btn">
+      <button
+        class="btn btn-reset btn--stroke btn--small header__btn modal-btn"
+      >
         Оставить заявку
       </button>
 
@@ -164,14 +166,126 @@
           </li>
         </ul>
       </nav>
-      <button class="btn-reset btn btn--small btn--stroke btn--black menu__btn">
-        Оставить заявку
-      </button>
+      <div class="centered">
+        <button
+          class="btn-reset btn btn--small btn--stroke btn--black menu__btn modal-btn"
+        >
+          Оставить заявку
+        </button>
+      </div>
     </div>
   </div>
 </div>
 
 </header>
+<div class="popup">
+  <div class="popup__body">
+    <div class="popup__header flex jcsb">
+      <p class="title2 popup__title">
+        Оставьте заявку<br />и&nbsp;мы&nbsp;с&nbsp;вами свяжемся
+      </p>
+      <button class="btn-reset popup__close">
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M2 2L30 30M30 2L2 30" stroke="black" stroke-width="4" />
+        </svg>
+      </button>
+    </div>
+
+    <form class="form popup-form">
+      <div class="form__row">
+        <div class="form__field">
+          <input
+            type="text"
+            id="input-name"
+            name="Имя"
+            class="form__input input-name"
+          />
+          <label for="input-name">Имя*</label>
+        </div>
+      </div>
+
+      <div class="form__row">
+        <div class="form__field">
+          <input
+            type="tel"
+            id="input-tel"
+            name="Телефон"
+            class="form__input input-tel"
+          />
+          <label for="input-tel">Телефон*</label>
+        </div>
+        <div class="form__field">
+          <input
+            type="email"
+            id="input-email"
+            name="Email"
+            class="form__input input-email"
+          />
+          <label for="input-email">E-mail*</label>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__field">
+          <input
+            type="text"
+            id="input-dest"
+            name="Пункт отправления"
+            class="form__input input-dest"
+          />
+          <label for="input-dest">Пункт отправления</label>
+        </div>
+        <div class="form__field">
+          <input
+            type="text"
+            id="input-dest2"
+            name="Телефон"
+            class="form__input input-dest2"
+          />
+          <label for="input-dest2">Пункт назначения</label>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__field">
+          <input
+            type="text"
+            id="input-type"
+            name="Имя"
+            class="form__input input-type"
+          />
+          <label for="input-type">Тип груза</label>
+        </div>
+      </div>
+      <div class="form__row">
+        <div class="form__field">
+          <textarea
+            type="text"
+            id="input-sms"
+            name="Имя"
+            class="form__input form__input--area input-sms"
+          ></textarea>
+          <label for="input-sms">Сообщение</label>
+        </div>
+      </div>
+
+      <span class="form__bottom">
+        <button class="btn-reset btn form__btn" disabled>отправить</button>
+        <small>
+          Нажимая кнопку &laquo;Отправить заявку&raquo;, вы&nbsp;соглашаетесь
+          <a href="#" class="link">
+            с&nbsp;политикой обработки персональных данных
+          </a>
+        </small>
+      </span>
+    </form>
+  </div>
+</div>
+
 
       <main class="main">
         <section class="contacts">
@@ -239,11 +353,11 @@
               <div class="form__field">
                 <input
                   type="text"
-                  id="input-name"
+                  id="input-name1"
                   name="Имя"
                   class="form__input input-name"
                 />
-                <label for="input-name">Имя</label>
+                <label for="input-name1">Имя</label>
               </div>
             </div>
 
@@ -251,18 +365,18 @@
               <div class="form__field">
                 <input
                   type="tel"
-                  id="input-tel"
+                  id="input-tel1"
                   name="Телефон"
                   class="form__input input-tel"
                 />
-                <label for="input-tel">Телефон</label>
+                <label for="input-tel1">Телефон</label>
               </div>
             </div>
 
             <button class="btn-reset btn form__btn" disabled>отправить</button>
-            <small class="link">
+            <small>
               Нажимая кнопку &laquo;Отправить заявку&raquo;,
-              вы&nbsp;соглашаетесь <br />с&nbsp;<a href="#">
+              вы&nbsp;соглашаетесь <br />с&nbsp;<a href="#" class="link">
                 политикой обработки персональных данных
               </a>
             </small>

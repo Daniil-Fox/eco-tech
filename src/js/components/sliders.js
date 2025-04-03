@@ -4,7 +4,7 @@ Swiper.use([Navigation, Thumbs, Pagination]);
 const singleThumbsSlider = new Swiper(".single__slider--thumb", {
   slidesPerView: "auto",
   spaceBetween: 10,
-
+  autoHeight: true,
   navigation: {
     prevEl: ".single__arr--prev",
     nextEl: ".single__arr--next",

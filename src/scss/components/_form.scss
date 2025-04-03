@@ -1,6 +1,12 @@
 .form {
   --offset: 0.8rem;
   &__row {
+    display: flex;
+    gap: 2rem;
+
+    @include mobile {
+      flex-direction: column;
+    }
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
@@ -9,11 +15,24 @@
     }
   }
   &__field {
+    overflow: hidden;
+    flex: 1;
     position: relative;
-
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      left: 1px;
+      top: 1px;
+      right: 1px;
+      height: 2rem;
+      background-color: var(--grey1);
+      backdrop-filter: blur(10px);
+    }
     span,
     label {
       position: absolute;
+      z-index: 2;
       left: 2.2rem;
       top: 50%;
       transform: translateY(-50%);
@@ -27,9 +46,9 @@
     &--filled {
       span,
       label {
-        transform: translateY(0);
-        top: var(--offset);
-        font-size: 1.2rem;
+        transform: translateY(0) !important;
+        top: var(--offset) !important;
+        font-size: 1.2rem !important;
       }
     }
   }
@@ -46,11 +65,20 @@
     font-size: 2rem;
     line-height: 100%;
     color: var(--black);
-    border: 1px solid transparent;
+    border: 1px solid var(--grey1);
+    resize: none;
+    &--area {
+      height: 10rem;
+      padding-top: 2.2rem;
 
+      & ~ label {
+        transform: translateY(0);
+        top: 2.2rem;
+      }
+    }
     &:focus {
       border-color: var(--black);
-
+      outline: none;
       & ~ span,
       & ~ label {
         transform: translateY(0);
@@ -70,7 +98,10 @@
     }
   }
   &__btn {
+    flex: 1;
     width: 100%;
+    padding-top: 2.2rem;
+    padding-bottom: 1.8rem;
     &:not(:last-child) {
       margin-bottom: 0.6rem;
     }
@@ -78,13 +109,29 @@
 
   small {
     display: block;
+    flex-shrink: 0;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 120%;
     color: var(--black);
     a {
+      display: inline;
       color: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 1.5rem;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0.5rem;
     }
   }
 }

@@ -13,6 +13,7 @@
   color: var(--white);
   background-color: transparent;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
   display: none;
   @include mobile {
     display: block;
@@ -25,7 +26,7 @@
     width: 100%;
     height: var(--burger-line-height);
     background-color: currentColor;
-    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   &::before {
@@ -44,20 +45,23 @@
     height: var(--burger-line-height);
     background-color: currentColor;
     transform: translateY(-50%);
-    transition: transform 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
   }
 
   &--active {
+    transform: translate(-0.3rem, -0.4rem);
     &::before {
       top: 50%;
       transform: rotate(45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      width: 120%;
     }
 
     &::after {
       top: 50%;
       transform: rotate(-45deg);
       transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+      width: 120%;
     }
 
     .burger__line {

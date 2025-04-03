@@ -1,0 +1,150 @@
+.service-blocks {
+  margin-bottom: 12rem;
+  @include mobile {
+    margin-bottom: 11.7rem;
+  }
+  &__items {
+    display: flex;
+    gap: 4rem;
+    @include mobile {
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+      @include mobile {
+        margin-bottom: 2.8rem;
+      }
+    }
+  }
+
+  &__item {
+    &:nth-child(1) {
+      flex: 0 0 61rem;
+      @include mobile {
+        flex: unset;
+      }
+    }
+    &:nth-child(2) {
+      flex: 1;
+      @include mobile {
+        flex: unset;
+      }
+    }
+
+    &--extra {
+      .sb-item__desc {
+        p,
+        ul,
+        ol {
+          margin: 0;
+          padding: 0;
+          &:not(:last-child) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.service-blocks__items--general {
+  .service-blocks__item {
+    padding-bottom: 6.2rem;
+    @include mobile {
+      padding-bottom: 4.4rem;
+    }
+    &:nth-child(1) {
+      flex: 0 0 72.4rem;
+      @include mobile {
+        flex: unset;
+      }
+    }
+  }
+
+  .sb-item__desc {
+    @include mobile {
+      font-size: 2rem;
+    }
+  }
+}
+.service-blocks__items--reverse {
+  .service-blocks__item {
+    &:nth-child(1) {
+      flex: 0 0 102.7rem;
+      @include mobile {
+        flex: unset;
+      }
+    }
+  }
+}
+.service-blocks__items--long {
+  .service-blocks__item {
+    &:nth-child(1) {
+      flex: unset;
+    }
+  }
+}
+
+.sb-item {
+  background-color: var(--white);
+  padding: 5.4rem 6rem;
+  padding-bottom: 5.2rem;
+
+  @include mobile {
+    padding: 4.4rem 4rem;
+  }
+  &__capture {
+    margin-bottom: 2.8rem;
+  }
+  &__row {
+    display: flex;
+    gap: 4rem;
+
+    & > * {
+      flex: 1;
+      @include mobile {
+        flex: unset;
+      }
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  }
+  &__desc {
+    @include mobile {
+      font-size: 2rem;
+    }
+    span {
+      color: var(--accent-blue);
+    }
+    p {
+      margin: 0;
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+        @include mobile {
+          margin-bottom: 1.5rem;
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-left: 2.7rem;
+      &:not(:last-child) {
+        margin-bottom: 1.6rem;
+      }
+      li {
+        &::marker {
+          font-size: 70%;
+        }
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}

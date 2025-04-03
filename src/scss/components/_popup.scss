@@ -1,0 +1,73 @@
+.popup {
+  position: fixed;
+
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.03);
+  backdrop-filter: blur(10rem);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  opacity: 0;
+  z-index: -10;
+  padding: 6.2rem var(--container-offset);
+  overflow-y: auto;
+  transition: 0.2s ease-in;
+  &.active {
+    z-index: 1000;
+    opacity: 1;
+  }
+
+  @include mobile {
+    padding: 5rem var(--container-offset);
+  }
+
+  &__body {
+    width: 100%;
+    max-width: 113.5rem;
+    padding: 7.4rem 8rem;
+    background-color: var(--white);
+    @include mobile {
+      padding: 4.5rem 4rem;
+    }
+  }
+
+  &__title {
+    letter-spacing: normal;
+    @include mobile {
+      font-size: 2.6rem;
+      letter-spacing: 0.05em;
+      line-height: 1.4;
+    }
+  }
+
+  .form {
+    small {
+      flex-grow: 0;
+      max-width: 35.2rem;
+      font-size: 1.6rem;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__header {
+    margin-bottom: 3.6rem;
+    align-items: flex-start;
+  }
+
+  &__close {
+    width: 3.3rem;
+    aspect-ratio: 1 / 1;
+    @include mobile {
+      width: 3.8rem;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

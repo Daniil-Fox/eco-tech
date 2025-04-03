@@ -14,12 +14,14 @@
     opacity: 1;
   }
   &__body {
-    padding: 5rem 0;
+    padding: 1.5rem 0;
+    padding-bottom: 5rem;
   }
   &__nav {
-    margin-bottom: 5rem;
+    margin-bottom: 4.6rem;
     ul {
       flex-direction: column;
+      gap: 3rem;
       li {
         a {
           color: var(--black);
@@ -27,8 +29,15 @@
       }
     }
   }
+
   &__btn {
     padding: 1.4rem;
     width: 100%;
+    max-width: 41.4rem;
+
+    @include mobile {
+      padding: 1rem;
+      padding-bottom: 0.9rem;
+    }
   }
 }
