@@ -4,7 +4,12 @@
   &__container {
     display: flex;
     gap: 4rem;
-    background-color: #fff;
+    background-color: var(--white);
+    @include mobile {
+      flex-direction: column-reverse;
+      background: none;
+      gap: 0;
+    }
   }
 
   &__content {
@@ -12,12 +17,26 @@
     max-width: 88.2rem;
     padding: 7rem 8rem 7.5rem;
     flex-shrink: 0;
+    @include mobile {
+      max-width: 100%;
+      padding: 4.6rem 3.9rem;
+      padding-bottom: 4rem;
+      background-color: var(--white);
+    }
   }
   &__title {
     font-size: 4rem;
     margin-bottom: 3rem;
+    @include mobile {
+      font-size: 3rem;
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+    }
   }
   &__desc {
+    @include mobile {
+      font-size: 2rem;
+    }
     p {
       margin: 0;
       &:not(:last-child) {
@@ -29,6 +48,17 @@
     flex-grow: 1;
     position: relative;
     clip-path: polygon(11.5% 0, 100% 0, 100% 100%, 10% 100%, 0 86.5%, 0 13.5%);
+    @include mobile {
+      height: 30rem;
+      clip-path: polygon(
+        7.7% 0%,
+        92.3% 0%,
+        100% 13.5%,
+        100% 100%,
+        0 100%,
+        0 13.5%
+      );
+    }
     img {
       position: absolute;
       left: 0;

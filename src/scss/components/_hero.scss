@@ -11,7 +11,7 @@
 
   @include mobile {
     padding: 0;
-    padding-top: 72.3rem;
+    min-height: 110rem;
     background-image: url("./../img/hero-mob.webp");
     background-position: 30.5% -59%;
     margin-bottom: 11.5rem;
@@ -22,6 +22,8 @@
     justify-content: flex-end;
   }
   &__content {
+    position: relative;
+    z-index: 3;
     padding: 9rem 13.6rem;
     padding-bottom: 10rem;
     padding-left: calc((100% - var(--content-width)) / 2);
@@ -50,6 +52,10 @@
   }
   &__desc {
     max-width: 73.2rem;
+    @include mobile {
+      max-width: 100%;
+      font-size: 2rem;
+    }
   }
   &__btn {
     display: flex;
@@ -65,15 +71,38 @@
   background-position: bottom;
   padding-bottom: 23.2rem;
   margin-bottom: 12rem;
+  @include mobile {
+    background-image: url("./../img/hero-about-mob.webp");
+    background-size: 100% 66.7%;
+    background-position: top;
+    padding: 0;
+  }
   .hero__content {
     padding-right: 10rem;
     padding-bottom: 9.1rem;
-    width: 100%;
+
+    @include mobile {
+      padding-right: 4rem;
+      padding-bottom: 5rem;
+      padding-top: 5.7rem;
+      clip-path: polygon(
+        7.7% 0%,
+        92.3% 0%,
+        100% 8.5%,
+        100% 100%,
+        0 100%,
+        0 8.5%
+      );
+    }
   }
   .hero__title {
     font-size: 6rem;
     letter-spacing: 0.04em;
     line-height: 1.2;
     margin-bottom: 3.3rem;
+    @include mobile {
+      font-size: 3.6rem;
+      margin-bottom: 2.5rem;
+    }
   }
 }

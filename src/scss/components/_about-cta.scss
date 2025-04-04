@@ -3,16 +3,29 @@
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     gap: 4rem;
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+    }
   }
   &__item {
     grid-column: 7 span;
     background-color: #fff;
     padding: 7.7rem 6rem;
     padding-bottom: 7.1rem;
-
+    @include mobile {
+      padding: 4.9rem 3.9rem;
+      padding-bottom: 4.1rem;
+    }
     &--form {
       padding-top: 5.3rem;
       padding-bottom: 5.6rem;
+
+      @include mobile {
+        padding: 4.2rem 3.9rem;
+      }
     }
   }
   &__img {
@@ -20,7 +33,18 @@
     grid-column: 9 span;
     position: relative;
     clip-path: polygon(0 0, 90.5% 0, 100% 10%, 100% 90%, 91.5% 100%, 0 100%);
-
+    @include mobile {
+      height: 30rem;
+      order: -1;
+      clip-path: polygon(
+        7.7% 0%,
+        92.3% 0%,
+        100% 13.5%,
+        100% 100%,
+        0 100%,
+        0 13.5%
+      );
+    }
     img {
       position: absolute;
       left: 0;
@@ -33,14 +57,29 @@
     font-size: 4rem;
     margin-bottom: 2.1rem;
     line-height: 1.1;
+    @include mobile {
+      font-size: 3rem;
+      margin-bottom: 1.4rem;
+    }
   }
   &__capture {
     font-weight: 600;
     max-width: 80%;
     line-height: 1.2;
     margin-bottom: 3.2rem;
+    @include mobile {
+      font-family: var(--second-family);
+      text-transform: uppercase;
+      font-weight: 500;
+      max-width: 100%;
+      font-size: 2.6rem;
+      line-height: 1.4;
+    }
   }
   &__desc {
     font-weight: 400;
+    @include mobile {
+      font-size: 2rem;
+    }
   }
 }
