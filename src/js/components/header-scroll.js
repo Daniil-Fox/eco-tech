@@ -16,18 +16,14 @@ function handleScroll() {
     header.classList.remove("header--dark");
     siteContainer.style.paddingTop = null;
     // Восстанавливаем изначальное position
-    if (header.classList.contains("header--sec")) {
-      header.style.position = "relative";
-    } else {
-      header.style.position = "absolute";
-    }
+    header.style.position = null;
   }
   // Если скроллим вверх и не в начальной позиции
   else if (isScrollingUp) {
     header.classList.remove("header--hidden");
     header.classList.add("header--scrolled");
     header.classList.contains("header--sec")
-      ? (siteContainer.style.paddingTop = header.scrollHeight + "px")
+      ? (siteContainer.style.paddingTop = header.clientHeight + "px")
       : null;
     // Добавляем темный класс если его нет
     if (!header.classList.contains("header--dark")) {
@@ -45,11 +41,5 @@ function handleScroll() {
 // Используем throttle для оптимизации производительности
 let timeout;
 window.addEventListener("scroll", () => {
-  if (timeout) {
-    window.cancelAnimationFrame(timeout);
-  }
-
-  timeout = window.requestAnimationFrame(() => {
-    handleScroll();
-  });
+  handleScroll();
 });

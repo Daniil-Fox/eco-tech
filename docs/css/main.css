@@ -586,7 +586,7 @@ button:focus {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 100;
@@ -773,7 +773,7 @@ button:focus {
 }
 
 .header.header--scrolled {
-  position: fixed !important;
+  position: fixed;
   background-color: var(--white);
   -webkit-box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 60px 0 rgba(0, 0, 0, 0.05);
